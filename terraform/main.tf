@@ -7,4 +7,6 @@ module "frontend_eks_cluster" {
   cluster_name = "frontend-cluster"
   eks_subnet_1 = module.frontend_vpc.eks_subnet_1
   eks_subnet_2 = module.frontend_vpc.eks_subnet_2
+  eks_frontend_subnet_1 = module.frontend_vpc.eks_frontend_subnet_1
+  eks_frontend_subnet_2 = module.frontend_vpc.eks_frontend_subnet_2
 }
