@@ -7,10 +7,4 @@ resource "aws_eks_fargate_profile" "eks_fargate_profile" {
   selector {
     namespace = "frontend"
   }
-  selector {
-    namespace = "kube-system"
-    labels = { 
-      "k8s-app"="kube-dns"
-    }
-  }
 }
