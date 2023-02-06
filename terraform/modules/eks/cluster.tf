@@ -14,5 +14,7 @@ resource "aws_eks_cluster" "frontend_cluster" {
     aws_iam_role_policy_attachment.frontend-AmazonEKSClusterPolicy,
     aws_iam_role_policy_attachment.frontend-AmazonEKSVPCResourceController,
     aws_cloudwatch_log_group.eks_log_group,
+    aws_iam_role_policy_attachment.AmazonEKSFargatePodExecutionRolePolicy,
+
   ]
 }
